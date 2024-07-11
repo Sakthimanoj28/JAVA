@@ -1,0 +1,10 @@
+class temprature
+{
+public static void main(String args[])
+{
+double celcius=11.4;
+double fahrenhite=(celcius*9/5)+32;
+System.out.println("The area of circle is :"+fahrenhite);
+
+}
+}
