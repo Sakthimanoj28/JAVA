@@ -1,0 +1,16 @@
+import java.util.*;
+class triangleareainput
+
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter length :");
+double l=sc.nextDouble();
+System.out.println("Enter breath :");
+double b=sc.nextDouble();
+double area=(1*b)/2;
+System.out.println("The area of circle is :"+area);
+
+}
+}
