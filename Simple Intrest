@@ -1,0 +1,10 @@
+class intrest
+{
+public static void main(String args[])
+{
+double p=1300,i=12,t=2;
+double si=(p*i*t)/100;
+System.out.println("The area of circle is :"+si);
+
+}
+}
