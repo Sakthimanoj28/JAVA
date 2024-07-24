@@ -1,0 +1,33 @@
+import java.util.*;
+class Triangle
+{
+  Scanner sc=new Scanner(System.in);
+  int b;
+  int h;
+  double area;
+  void get()
+  {
+    System.out.println("enter height :");
+    h=sc.nextInt();
+    System.out.println("enter base :");
+    b=sc.nextInt();
+  }
+  void cal()
+  {
+    area=0.5*b*h;
+  }
+  void disp()
+  {
+    System.out.println("output="+area);
+  }
+}
+class Triangleclassandobject
+{
+  public static void main(String arg[])
+  {
+    Triangle obj=new Triangle();
+    obj.get();
+    obj.cal();
+    obj.disp();
+  }
+}
