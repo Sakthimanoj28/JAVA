@@ -1,0 +1,30 @@
+class sphere 
+    {
+     double area;
+     double volume;
+     double r;
+     void area(double a)
+     {
+         r=a;
+         area=(3.14)*r*r;
+        System.out.println("The area of the sphere is :"+area);
+    }
+    }
+    class volume extends sphere
+    {
+        void volume()
+        {
+            volume=(4/3)*3.14*r*r*r;
+            System.out.println("The volume of the sphere is :"+volume);
+            
+        }
+    }
+    class sakthisphere
+    {
+        public static void main (String args[])
+        {
+            volume obj=new volume();
+            obj.area(12.5);
+            obj.volume();
+        }
+    }
