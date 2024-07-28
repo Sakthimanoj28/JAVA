@@ -1,0 +1,33 @@
+import java.util.*;
+class Add
+{
+  Scanner sc=new Scanner(System.in);
+  int a;
+  int b;
+  int c;
+  void get()
+  {
+    System.out.println("enter a value :");
+    a=sc.nextInt();
+    System.out.println("enter b value :");
+    b=sc.nextInt();
+  }
+  void cal()
+  {
+    c=a+b;
+  }
+  void disp()
+  {
+    System.out.println("output="+c);
+  }
+}
+class Testclassandobject2
+{
+  public static void main(String arg[])
+  {
+    Add obj=new Add();
+    obj.get();
+    obj.cal();
+    obj.disp();
+  }
+}

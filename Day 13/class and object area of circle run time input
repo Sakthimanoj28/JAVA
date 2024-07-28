@@ -1,0 +1,30 @@
+import java.util.*;
+class Area
+{
+   Scanner sc=new Scanner(System.in);
+   int r;
+   double area;
+   void get()
+   {
+     System.out.println("enter radius :");
+     r=sc.nextInt();
+   }
+   void cal()
+   { 
+     area=3.14*r*r;
+   }
+   void display()
+   {
+     System.out.println("output="+area);
+   }
+}
+class Circleclassandobject2
+{
+   public static void main(String arg[])
+   {
+     Area obj=new Area();
+     obj.get();
+     obj.cal();
+     obj.display();
+   }
+}

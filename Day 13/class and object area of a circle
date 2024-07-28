@@ -1,0 +1,27 @@
+class Area
+{
+   int r;
+   double area;
+   void get()
+   {
+     r=10;
+   }
+   void cal()
+   { 
+     area=3.14*r*r;
+   }
+   void display()
+   {
+     System.out.println("output="+area);
+   }
+}
+class Circleclassandobject
+{
+   public static void main(String arg[])
+   {
+     Area obj=new Area();
+     obj.get();
+     obj.cal();
+     obj.display();
+   }
+}
