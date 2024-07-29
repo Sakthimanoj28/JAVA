@@ -1,0 +1,37 @@
+
+import java.util.*;
+class employee 
+{
+    double salary;
+    double house;
+    double travel;
+    double gym;
+    double allowance;
+    void salary(double x) 
+    {
+      salary=x;
+      System.out.println("Employee Basic Salary : "+salary);
+    }
+}
+class allowance extends employee 
+{
+  void allowance(double a,double b,double c)
+  {
+     house=a;
+     travel=b;
+     gym=c;
+     
+     allowance=salary+house+travel+gym;
+     System.out.println("Employee Salary with Allowance : "+allowance);
+  }
+}
+class employeeallowance 
+{
+  public static void main(String arg[]) 
+  {
+     
+     allowance obj=new allowance();
+     obj.salary(50000);
+     obj.allowance(8000,5000,2500);
+  }
+}
