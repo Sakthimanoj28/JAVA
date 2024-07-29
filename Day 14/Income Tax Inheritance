@@ -1,0 +1,51 @@
+import java.util.*;
+class income 
+{
+
+    double income;
+    double tax=0;
+   
+    void income(double x) 
+    {
+      income=x;
+      System.out.println("Income : "+income);
+    }
+}
+class tax extends income 
+{
+  void test()
+  {
+    if(income<=250000) 
+    {
+       System.out.println("No Tax");
+    } 
+    else if(income>=250001&&income<=500000) 
+    {
+       tax=income*10/100;
+       System.out.println("Yoy want to pay 10% of amount "+tax);
+    } 
+    else if(income>=500001&&income<=1000000)
+    {
+        tax=income*20/100;
+       System.out.println("Yoy want to pay 20% of amount "+tax);
+    } 
+    else if(income>=1000001)
+    {
+        tax=income*30/100;
+      System.out.println("Yoy want to pay 30% of amount "+tax);
+    }
+  }
+}
+class IncomeTax 
+{
+  public static void main(String arg[]) 
+  {
+      Scanner sc=new Scanner(System.in);
+  {
+     tax obj=new tax();
+     System.out.print("Enter the income : ");
+     obj.income(sc.nextDouble());
+     obj.test();
+  }
+}
+}
