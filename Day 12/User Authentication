@@ -1,0 +1,19 @@
+import java.util.*;
+class HelloWorld {
+    
+    public static void main(String[] args) {
+    Scanner sc=new Scanner (System.in);
+    {
+        String actual="Sakthi";
+        System.out.println("---Enter the Password---");
+        String check=sc.nextLine();
+        if(actual.equals(check))
+        {
+            System.out.println("you are allowed to access the mobile");
+        }
+        else{
+            System.out.println("The password you entered is incorrect");
+        }
+    }
+}
+}
